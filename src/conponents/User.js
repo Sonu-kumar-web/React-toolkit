@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const User = ({ data, index }) => {
-  const { name, username, email, id } = data;
+  const { name, username, email } = data;
 
   return (
     <tr>
