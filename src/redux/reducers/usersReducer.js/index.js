@@ -16,11 +16,11 @@ const usersReducre = createSlice({
   // React toolkit automatic create the action type
   // Here action_type will be "user/addUser" i.e user=> name and adduser is action name
 
-  // Include normal actions
+  // it contains normal actions
   reducers: {
     addUser: (state, action) => {
       console.log("plyload", action);
-      state.users = [...state.users, action.payload];
+      state.users = [...state.users, { name: action.payload }];
     },
   },
 
